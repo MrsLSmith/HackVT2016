@@ -106,3 +106,5 @@ Temporary Items
 ### NotepadPP ###
 # Notepad++ backups #
 *.bak
+
+.idea
