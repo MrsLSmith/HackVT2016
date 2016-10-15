@@ -240,7 +240,7 @@ header .hide-completed {
 }
 
 .grphdr {
-    height: 15rem;
+    height: 24rem;
     padding: 0;
 }
 
@@ -297,19 +297,50 @@ header .hide-completed {
     height: 4.2rem;
     font-size: 2rem;
 }
-
 .navbut {
-    width: 36rem;
+    width: 45%;
     height: 9rem;
     font-size: 3rem;
-    margin: 0 auto;
+    margin:0;
     border: 0;
     padding: 0;
+    float:left;
+    border-top: solid 1px rgba(0,0,0,.9);
+}
+.navbut:nth-child(3){float:right;}
+
+
+
+.clearfix:after {
+    content:" ";
+    display:table;
+    clear:both;
+}
+.hombut {
+    width: 9rem;
+    height: 9rem;
+    float: none;
+}
+.hombut svg{height: 7rem; width: 7rem;}
+
+
+
+
+#navigation_container {
+    text-align:center;   display: block;
+    margin: auto;
+    width: 100%;
+    height: 9rem;
+
 }
 
-.nvbt {
+.sec {
     display: block;
-    margin: auto;
-    width: 80%;
-    height: 12.0rem;
 }
+
+section {font-size: 1.8rem; }
+
+section div{padding: 1rem;}
+
+
+.group-title{border: 0; margin: 0; width: 100vw;}
