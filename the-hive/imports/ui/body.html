@@ -1,55 +1,27 @@
 <body>
-<div class="container">
-    <header>
-        <h1>Login</h1>
-    </header>
-
-    <ul>
-        {{#each users}}
-        {{> user}}
-        {{/each}}
-        {{#each locations}}
-        {{> location}}
-        {{/each}}
-        {{#each schools}}
-        {{> school}}
-        {{/each}}
-        {{#each groups}}
-        {{> group}}
-        {{/each}}
-    </ul>
-</div>
+{{> studygroups}}
 </body>
 
-<template name="user">
-    <li>USER {{username}}</li>
-    <li>sGROUP {{sgroup}}</li>
-</template>
-<template name="location">
-    <li>lTYPE {{type}}</li>
-    <li>lNAME {{name}}</li>
-    <li>lADDRESS {{address}}</li>
-    <li>lCITY {{city}}</li>
-    <li>lSTATE {{state}}</li>
-    <li>lZIP {{zip}}</li>
-    <li>lLAT {{lat}}</li>
-    <li>lLONG {{long}}</li>
-    <li>lPHONE {{phone}}</li>
-</template>
-<template name="school">
-    <li>sNAME {{name}}</li>
-    <li>sADDRESS {{address}} </li>
-    <li>sCITY {{city}} </li>
-    <li>sState {{state}}</li>
-    <li>sZIP {{zip}} </li>
-    <li>sPHONE {{phone}} </li>
-</template>
-<template name="group">
-    <li>gNAME {{name}} </li>
-    <li>gDATE {{date}} </li>
-    <li>gTIME {{time}} </li>
-    <li>gLOC {{location}} </li>
-    <li>gTOPIC {{topics}} </li>
-    <li>gPEOPLE {{myStudents}} </li>
+<template name="studygroups">
+    <div class="container">
+        <header class="grphdr">
+            <h1 id="grp">Groups</h1>
+        </header>
+        <div class="courses">
+            {{#each groups}}
+               {{> studygroup}}
+            {{/each}}
+        </div>
+        <footer class="ftrbtn">
+            <button id="btn2">Create</button>
+        </footer>
+    </div>
 </template>
 
+<template name="studygroup">
+    <div class="course">
+        <span class="description">{{topics}}</span>
+        <span class="description">{{date}}, at {{time}}</span>
+        <span class="description">Meet In Room {{location}}</span>
+    </div>
+</template>

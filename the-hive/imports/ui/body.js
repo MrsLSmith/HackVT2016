@@ -14,3 +14,9 @@ Template.body.helpers({
     },
 
 });
+
+Template.studygroups.helpers({
+    groups() {
+        return Groups.find({});
+    },
+});
