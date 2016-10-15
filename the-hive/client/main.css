@@ -265,7 +265,7 @@ header .hide-completed {
     display: block;
     margin: 0 auto 3rem;
     width: 34.6rem;
-    height: 4.2rem;
+    height: 5.2rem;
     font-size: 5rem;
 }
 
@@ -305,7 +305,7 @@ header .hide-completed {
     font-size: 2rem;
 }
 .navbut {
-    width: 45%;
+    width: 40%;
     height: 9rem;
     font-size: 3rem;
     margin:0;

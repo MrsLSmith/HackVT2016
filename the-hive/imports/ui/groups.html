@@ -1,7 +1,9 @@
 <body>
 <div class="container">
     <header class="grphdr">
-        <h1 id="grp"><span class="spngrp">Hive Details</span></h1>
+        <h1 id="grp">
+            <span class="spngrp">Current Hives</span>
+        </h1>
         <nav id="navigation_container" class="clearfix">
             <button class="navbut">Prev</button>
             <button class="hombut">
@@ -60,23 +62,13 @@
         </nav>
     </header>
     <section>
-        <div>
-            <h2 class="group-title">Chem Group</h2>
-        </div>
-        <div>
-            <p>10/17/2016</p>
-        </div>
-        <div>
-            <h2>Topic</h2>
-            <ul>
-                <li>Binomial Nomenclature</li>
-                <li>PSAT</li>
-            </ul>
-        </div>
-        <div class="courses">
-            {{#each groups}}
-            {{> group}}
-            {{/each}}
+        <div id="blocks">
+            <div class="title-database">
+            <h2 class="group-title">No hives joined</h2>
+            </div>
+            <div>
+            <p>click on the create button to create a hive </p>
+            </div>
         </div>
     </section>
     <footer class="ftrbtn">
