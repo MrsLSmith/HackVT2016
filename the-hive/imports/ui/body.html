@@ -1,20 +1,43 @@
 <body>
-<div class="container">
-    <header>
-        <h1>Login</h1>
-    </header>
-
-    <ul>
-        {{#each users}}
-        {{> user}}
-        {{/each}}
-        {{#each users}}
-        {{> user}}
-        {{/each}}
-    </ul>
-</div>
+{{#if studyGroupScreen}}
+    {{> studygroups}}
+{{/if}}
+{{#if loginScreen}}
+    {{> login}}
+    {{/if}}
 </body>
 
-<template name="user">
-    <li>USER {{username}}</li>
+<template name="studygroups">
+    <div class="container">
+        <header class="grphdr">
+            <h1 id="grp">Groups</h1>
+        </header>
+        <div class="courses">
+            {{#each groups}}
+               {{> studygroup}}
+            {{/each}}
+        </div>
+        <footer class="ftrbtn">
+            <button id="btn2">Create</button>
+        </footer>
+    </div>
+</template>
+
+<template name="studygroup">
+    <div class="course">
+        <span class="description">{{topic}}</span>
+        <span class="description">{{formatDate dateTime}}</span>
+        <span class="description">Meet At {{location.name}}</span>
+    </div>
+</template>
+
+<template name="login">
+    <h1 id="title">The Hive</h1>
+    <label id="usr">Username</label>
+    <input type="text" id="username" class="username"/>
+    <label id="pswd">Password</label>
+    <input type="text" id="password" class="password"/>
+    <label id="sch">School</label>
+    <input type="text" id="school" class="school"/>
+    <button id="btn">Login</button>
 </template>

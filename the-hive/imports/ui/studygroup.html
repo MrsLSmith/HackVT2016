@@ -1,0 +1,32 @@
+<body>
+<div class="container">
+    <header class="grphdr">
+        <h1 id="grp">Groups</h1>
+    </header>
+    <div class="courses">
+                {{#each groups}}
+                {{> group}}
+                {{/each}}
+    </div>
+    <footer class="ftrbtn">
+        <button id="btn2">Create</button>
+    </footer>
+
+</div>
+</body>
+
+<template name="group">
+    <div class="course">
+        <span class="description">{{topics}}</span>
+        <span class="description">{{date}}, at {{time}}</span>
+        <span class="description">Meet In Room {{location}}</span>
+    </div>
+</template>
+
+
+
+
+
+
+
+
