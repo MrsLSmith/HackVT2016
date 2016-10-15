@@ -1,2 +1,2 @@
-import '../imports/ui/groups.html';
+import '../imports/ui/studygroup.html';
 
