@@ -13,7 +13,6 @@ body {
     right: 0;
     padding: 0;
     margin: 0;
-    font-size: 14rem;
 }
 
 #title{
@@ -190,10 +189,18 @@ header .hide-completed {
 
 #grp {
     font-size: 8rem;
-    width: 30rem;
+    width: 100%;
     text-align: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 15rem;
+}
+
+.spngrp {
+    font-size: 8rem;
     color: #EBD64D;
-    margin-bottom: 2rem;
+    line-height: 15rem;
 }
 
 .course {
@@ -234,5 +241,75 @@ header .hide-completed {
 
 .grphdr {
     height: 15rem;
+    padding: 0;
 }
 
+.newg {
+    text-align: center;
+    font-size: 5rem;
+    color: #ebd64d;
+}
+
+.nme {
+    text-align: center;
+    display: block;
+    font-size: 5rem;
+    margin: 3rem auto 0;
+}
+
+.username {
+    display: block;
+    margin: 0 auto 3rem;
+    width: 34.6rem;
+    height: 4.2rem;
+}
+
+.dte {
+    display: block;
+    font-size: 5rem;
+    text-align: center;
+}
+
+.password {
+    display: block;
+    margin: 0 auto 3rem;
+    width: 34.6rem;
+    height: 4.2rem;
+}
+
+.mnos {
+    display: block;
+    font-size: 5rem;
+    text-align: center;
+}
+
+.school {
+    display: block;
+    margin: 0 auto 3rem;
+    width: 34.6rem;
+    height: 4.2rem;
+}
+
+.crte {
+    display: block;
+    margin: 3rem auto;
+    width: 11.0rem;
+    height: 4.2rem;
+    font-size: 2rem;
+}
+
+.navbut {
+    width: 36rem;
+    height: 9rem;
+    font-size: 3rem;
+    margin: 0 auto;
+    border: 0;
+    padding: 0;
+}
+
+.nvbt {
+    display: block;
+    margin: auto;
+    width: 80%;
+    height: 12.0rem;
+}
