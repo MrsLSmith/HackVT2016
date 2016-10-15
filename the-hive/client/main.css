@@ -15,6 +15,10 @@ body {
     margin: 0;
 }
 
+label {
+    color:#ebd64d;
+}
+
 #title{
     color: #ebd64d;
     text-align: center;
@@ -262,6 +266,7 @@ header .hide-completed {
     margin: 0 auto 3rem;
     width: 34.6rem;
     height: 4.2rem;
+    font-size: 5rem;
 }
 
 .dte {
@@ -275,6 +280,7 @@ header .hide-completed {
     margin: 0 auto 3rem;
     width: 34.6rem;
     height: 4.2rem;
+    font-size: 5rem;
 }
 
 .mnos {
@@ -288,6 +294,7 @@ header .hide-completed {
     margin: 0 auto 3rem;
     width: 34.6rem;
     height: 4.2rem;
+    font-size: 5rem;
 }
 
 .crte {
@@ -313,3 +320,17 @@ header .hide-completed {
     width: 80%;
     height: 12.0rem;
 }
+
+#field1 {
+    text-align:center;
+    font-size: 5rem;
+    color:#ebd64d;
+}
+
+.field {
+    font-size:5rem;
+    width: 100px;
+    height: 100px;
+
+}
+

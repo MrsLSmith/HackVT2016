@@ -1,2 +1,2 @@
-import '../imports/ui/studygroup.js';
+import '../imports/ui/create.js';
 

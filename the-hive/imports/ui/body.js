@@ -6,7 +6,7 @@ import './body.html';
 
 import {Users, Groups} from '../api/tasks.js';
 
-var activeScreen = "studygroup";
+var activeScreen = "create";
 
 
 Template.body.helpers({
@@ -19,7 +19,9 @@ Template.body.helpers({
     loginScreen(){
         return activeScreen === "login"
     },
-
+    createScreen(){
+        return activeScreen === "create"
+    },
 });
 
 Template.studygroups.helpers({

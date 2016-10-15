@@ -4,7 +4,10 @@
 {{/if}}
 {{#if loginScreen}}
     {{> login}}
-    {{/if}}
+{{/if}}
+{{#if createScreen}}
+    {{> create}}
+{{/if}}
 </body>
 
 <template name="studygroups">
@@ -40,4 +43,15 @@
     <label id="sch">School</label>
     <input type="text" id="school" class="school"/>
     <button id="btn">Login</button>
+</template>
+
+<template name="create">
+    <h1 class="newg">New Group</h1>
+    <label class="nme">Name</label>
+    <input type="text" class="username"/>
+    <label class="dte">Date</label>
+    <input type="text" class="password"/>
+    <label class="mnos">Maximum Number of Students</label>
+    <input type="text" class="school"/>
+    <button class="crte">Create</button>
 </template>
