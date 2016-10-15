@@ -73,6 +73,9 @@ Template.body.events({
         // Clear form
         console.log('create button clicked');
     },
+    'click .crte'(event, instance){
+        instance.state.set('currentScreen', "studyGroups");
+    }
 });
 
 Template.body.events({
