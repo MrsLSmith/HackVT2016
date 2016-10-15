@@ -339,7 +339,6 @@ header .hide-completed {
 
     width: 100%;
     height: 9rem;
-
 }
 
 .sec {
@@ -352,4 +351,15 @@ section div{padding: 1rem;}
 
 
 .group-title{border: 0; margin: 0; width: 100vw;}
+
+#field1 {
+    text-align:center;
+    font-size: 5rem;
+    color:#ebd64d;
+}
+
+.field {
+    font-size:5rem;
+    width: 100px;
+    height: 100px;
 
