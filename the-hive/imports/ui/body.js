@@ -28,7 +28,13 @@ Template.studygroups.helpers({
     groups() {
         return Groups.find({});
     },
+    users(){
+        return Users.find({});
+
+    },
 });
+
+
 
 Template.studygroup.helpers({
     formatDate(date) {

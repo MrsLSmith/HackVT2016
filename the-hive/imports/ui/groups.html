@@ -1,7 +1,9 @@
 <body>
 <div class="container">
     <header class="grphdr">
-        <h1 id="grp"><span class="spngrp">Group Details</span></h1>
+        <h1 id="grp">
+            <span class="spngrp">Current Groups</span>
+        </h1>
         <nav id="navigation_container" class="clearfix">
             <button class="navbut">Prev</button>
             <button class="hombut">
@@ -60,27 +62,13 @@
         </nav>
     </header>
     <section>
-        <div>
-            <h2 class="group-title">Chem Group (groups)</h2>
-        </div>
-        <div>
-            <p>dateTime</p>
-            <p>Librery</p>
-        </div>
-        <div>
-            <h2>Topic</h2>
-            <ul>
-                <li>Binomialnomenclature</li>
-                <li>Cats</li>
-            </ul>
-        </div>
-        <div>
-            <h2>myStudents</h2>
-        </div>
-        <div class="courses">
-            {{#each groups}}
-            {{> group}}
-            {{/each}}
+        <div id="blocks">
+            <div class="title-database">
+            <h2 class="group-title">No groups joined</h2>
+            </div>
+            <div>
+            <p>click on the create button to create a group </p>
+            </div>
         </div>
     </section>
     <footer class="ftrbtn">
