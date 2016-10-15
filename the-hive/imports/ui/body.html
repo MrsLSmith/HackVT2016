@@ -9,6 +9,9 @@
 <div style={{isCurrent "create"}}>
  {{>create}}
     </div>
+<div style={{isCurrent "detail"}}>
+    {{>detail}}
+</div>
 </body>
 
 <template name="studygroups">
@@ -57,7 +60,8 @@
     <button class="crte">Create</button>
 </template>
 
-<template name=detail"><div class="container">
+<template name="detail">
+    <div class="container">
     <header class="grphdr">
         <h1 id="grp"><span class="spngrp">Hive Details</span></h1>
         <nav id="navigation_container" class="clearfix">

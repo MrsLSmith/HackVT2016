@@ -75,6 +75,11 @@ Template.body.events({
     },
     'click .crte'(event, instance){
         instance.state.set('currentScreen', "studyGroups");
+    },
+    'click .hombut'(event, instance){
+        instance.state.set('currentScreen', "studyGroups");
+    }, 'click .course'(event, instance){
+        instance.state.set('currentScreen', "detail");
     }
 });
 
