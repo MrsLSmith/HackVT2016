@@ -1,13 +1,14 @@
 import { Template } from 'meteor/templating';
 
 import './study-group.html';
-import { Users, Tasks } from '../api/tasks.js';
+import { Users, Groups } from '../api/tasks.js';
 
 Template.study-group.helpers({
     users() {
         return Users.find({});
     },
-    tasks() {
-        return Tasks.find({});
+    groups() {
+         var g = Groups.find({});
+         return ;
     },
 });
