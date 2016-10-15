@@ -1,13 +1,15 @@
 <body>
-{{#if studyGroupScreen}}
-    {{> studygroups}}
-{{/if}}
-{{#if loginScreen}}
-    {{> login}}
-{{/if}}
-{{#if createScreen}}
-    {{> create}}
-{{/if}}
+<div style={{isCurrent "login"}}>
+ {{>login}}
+     </div>
+<div style={{isCurrent "studyGroups"}}>
+
+ {{>studygroup}}
+     </div>
+<div style={{isCurrent "create"}}>
+
+ {{>create}}
+    </div>
 </body>
 
 <template name="studygroups">
@@ -21,7 +23,7 @@
             {{/each}}
         </div>
         <footer class="ftrbtn">
-            <button id="btn2">Create</button>
+            <button class='create-button' id="btn2">Create</button>
         </footer>
     </div>
 </template>
