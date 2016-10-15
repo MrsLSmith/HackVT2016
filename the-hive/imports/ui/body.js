@@ -1,3 +1,5 @@
+import moment from "moment";
+
 import {Template} from 'meteor/templating';
 
 import './body.html';
@@ -26,3 +28,8 @@ Template.studygroups.helpers({
     },
 });
 
+Template.studygroup.helpers({
+    formatDate(date) {
+        return moment(date).format("ddd MMM Do h:mm a");
+    },
+});
