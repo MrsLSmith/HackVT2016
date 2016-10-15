@@ -1,1 +1,1 @@
-import '../imports/ui/study-group.js';
+import '../imports/ui/create.js';
