@@ -1,10 +1,11 @@
 import { Template } from 'meteor/templating';
 
 import './body.html';
-import { Tasks } from '../api/tasks.js';
+import { Users } from '../api/tasks.js';
+import { Location } from '../api/tasks.js';
 
 Template.body.helpers({
-    tasks() {
-        return Tasks.find({});
+    users() {
+        return Users.find({});
     },
 });
