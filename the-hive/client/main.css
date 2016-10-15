@@ -1,8 +1,10 @@
 /* CSS declarations go here */
+html,body{font-size: 62.5%; }
+*{box-sizing: border-box;}
 body {
     font-family: sans-serif;
-    background-color: #ffff66;
-    background-image: linear-gradient(to bottom, #eeee66, #000, #eeee66 100%);
+    background-color: #337dff;
+    background-image: linear-gradient(to bottom, #337dff, #3fc5ff, #337dff 100%);
     background-attachment: fixed;
     position: absolute;
     top: 0;
@@ -11,29 +13,78 @@ body {
     right: 0;
     padding: 0;
     margin: 0;
-
-    font-size: 14px;
+    font-size: 14rem;
 }
 
-body.login{
-    color: mediumvioletred;
+#title{
+    color: #ebd64d;
     text-align: center;
-    margin: 2% 0 5% 0;
+    font-size: 3rem;
+    margin-bottom: 15rem;
+}
 
+#usr {
+    display: block;
+    font-size: 4rem;
+    color: #EBD64D;
+    margin: 0 auto 2.5rem;
+    text-align: center;
+}
 
+#username {
+    display: block;
+    width: 51.9rem;
+    height: 6.3rem;
+    margin: 0 auto 7rem;
+
+}
+
+#pswd {
+    display: block;
+    font-size: 4rem;
+    color: #EBD64D;
+    margin: 0 auto 2.5rem;
+    text-align: center;
+}
+
+#password {
+    display: block;
+    width: 51.9rem;
+    height: 6.3rem;
+    margin: 0 auto 7rem;
+}
+
+#sch {
+    display: block;
+    font-size: 4rem;
+    color: #EBD64D;
+    margin: 0 auto 2.5rem;
+    text-align: center;
+}
+
+#school {
+    display: block;
+    width: 51.9rem;
+    height: 6.3rem;
+    margin: 0 auto 7rem;
+}
+
+#btn {
+    display: block;
+    margin: auto;
+    width: 14.1rem;
+    height: 6.3rem;
+    font-size: 3rem;
 }
 
 .container {
-    max-width: 600px;
-    margin: 0 auto;
-    min-height: 100%;
-    background: white;
+    background: #fffec1;
 }
 
 header {
     background: #d2edf4;
     background-image: linear-gradient(to bottom, #d0edf5, #e1e5f0 100%);
-    padding: 20px 15px 15px 15px;
+    padding: 2rem 15px 15px 15px;
     position: relative;
 }
 
@@ -43,25 +94,31 @@ header {
 
 h1 {
     font-size: 1.5em;
-    margin: 0;
-    margin-bottom: 10px;
-    display: inline-block;
-    margin-right: 1em;
+    margin: 25px auto 0;
+    background-color: #2853ff;
+    width: 25rem;
+    border-style: solid;
+    border-color: black;
+    border-radius: 2rem;
+}
+
+h2 {
+
 }
 
 form {
-    margin-top: 10px;
-    margin-bottom: -10px;
+    margin-top: 1rem;
+    margin-bottom: -1rem;
     position: relative;
 }
 
 .new-task input {
     box-sizing: border-box;
-    padding: 10px 0;
+    padding: 1rem 0;
     background: transparent;
     border: none;
     width: 100%;
-    padding-right: 80px;
+    padding-right: 8rem;
     font-size: 1em;
 }
 
@@ -92,7 +149,7 @@ li {
 }
 
 li .text {
-    margin-left: 10px;
+    margin-left: 1rem;
 }
 
 li.checked {
@@ -116,13 +173,13 @@ header .hide-completed {
     margin-left: 5px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 60rem) {
     li {
         padding: 12px 15px;
     }
 
     .search {
-        width: 150px;
+        width: 15rem;
         clear: both;
     }
 
@@ -130,3 +187,52 @@ header .hide-completed {
         padding-bottom: 5px;
     }
 }
+
+#grp {
+    font-size: 8rem;
+    width: 30rem;
+    text-align: center;
+    color: #EBD64D;
+    margin-bottom: 2rem;
+}
+
+.course {
+    font-size: 4rem;
+    text-align: center;
+    color: #1e00ff;
+    display: block;
+    background-color: #9bc6ff;
+    padding: 5rem 0;
+}
+
+.course:nth-child(odd) {
+    background-color: #fffec1;
+}
+
+.courses {
+    height: calc(100vh - 25rem);
+    width: 100%;
+    overflow: auto;
+}
+
+#btn2 {
+    display: block;
+    margin: 3rem auto ;
+    width: 14.1rem;
+    height: 6.3rem;
+    font-size: 3rem;
+}
+
+.ftrbtn {
+    height: 10rem;
+}
+
+.description {
+    margin: 0;
+    display:block;
+}
+
+.grphdr {
+    height: 15rem;
+}
+

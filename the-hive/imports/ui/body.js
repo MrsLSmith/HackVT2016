@@ -1,6 +1,7 @@
 import { Template } from 'meteor/templating';
 
 import './body.html';
+
 import { Users, Locations, Groups, Schools } from '../api/tasks.js';
 
 Template.body.helpers({
@@ -15,6 +16,5 @@ Template.body.helpers({
     },
     schools() {
         return Schools.find({});
-    },
-
+    }
 });
