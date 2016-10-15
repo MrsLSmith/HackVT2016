@@ -1,9 +1,13 @@
 import { Template } from 'meteor/templating';
 
-import { Tasks } from '../api/tasks.js';
-
 import './login.html';
+import { Users, Tasks } from '../api/tasks.js';
 
-Template.body.helpers({
-
+Template.login.helpers({
+    users() {
+        return Users.find({});
+    },
+    tasks() {
+        return Tasks.find({});
+    },
 });

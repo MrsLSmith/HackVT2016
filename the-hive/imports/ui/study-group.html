@@ -1,0 +1,17 @@
+<body>
+<div class="container">
+    <header>
+        <h1 id="grp">Groups</h1>
+    </header>
+
+    <ul>
+        {{#each users}}
+            {{> user}}
+        {{/each}}
+    </ul>
+</div>
+</body>
+
+<template name="user">
+    <li>{{username}}</li>
+</template>

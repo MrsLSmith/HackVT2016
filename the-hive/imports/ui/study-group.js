@@ -1,9 +1,9 @@
 import { Template } from 'meteor/templating';
 
-import './body.html';
+import './study-group.html';
 import { Users, Tasks } from '../api/tasks.js';
 
-Template.body.helpers({
+Template.study-group.helpers({
     users() {
         return Users.find({});
     },
