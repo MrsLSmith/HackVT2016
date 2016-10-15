@@ -236,3 +236,56 @@ header .hide-completed {
     height: 15rem;
 }
 
+.newg {
+    text-align: center;
+    font-size: 5rem;
+    color: #ebd64d;
+}
+
+.nme {
+    text-align: center;
+    display: block;
+    font-size: 5rem;
+    margin: 3rem auto 0;
+}
+
+.username {
+    display: block;
+    margin: 0 auto 3rem;
+    width: 34.6rem;
+    height: 4.2rem;
+}
+
+.dte {
+    display: block;
+    font-size: 5rem;
+    text-align: center;
+}
+
+.password {
+    display: block;
+    margin: 0 auto 3rem;
+    width: 34.6rem;
+    height: 4.2rem;
+}
+
+.mnos {
+    display: block;
+    font-size: 5rem;
+    text-align: center;
+}
+
+.school {
+    display: block;
+    margin: 0 auto 3rem;
+    width: 34.6rem;
+    height: 4.2rem;
+}
+
+.crte {
+    display: block;
+    margin: 3rem auto;
+    width: 11.0rem;
+    height: 4.2rem;
+    font-size: 2rem;
+}
